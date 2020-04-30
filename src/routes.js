@@ -22,6 +22,7 @@ import AuthCheck from "./utils/authcheck";
 import history from "./utils/history";
 
 import { Router, Route, Switch, Redirect } from "react-router";
+import HooksForm from "./hooks/hooks_form";
 
 export const auth = new Auth();
 
@@ -78,6 +79,7 @@ class Routes extends Component {
 							<Route path="/redirect" component={UnauthRedirect} />
 							<Route path="/renderlist" component={RenderList} />
 							<Route path="/hookscontainer" component={HooksContainer1} />
+							<Route path="/hooksform" component={HooksForm} />
 
 							<Route
 								path="/callback"
